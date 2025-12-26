@@ -2,15 +2,18 @@
 @import "tw-animate-css";
 
 @theme inline {
-  --color-stone-900: hsl(0 0% 4%);     /* Deep Black #0a0a0a */
-  --color-stone-800: hsl(0 0% 10%);    /* Dark Gray #1a1a1a */
-  --color-stone-700: hsl(0 0% 20%);
-  --color-stone-400: hsl(0 0% 55%);    /* Mid Gray #8c8c8c */
-  --color-stone-100: hsl(60 10% 95%);  /* Off White #f4f4f0 */
-  --color-stone-50: hsl(60 10% 98%);
+  --color-stone-950: hsl(120 5% 4%);     /* Deep Mineral Black */
+  --color-stone-900: hsl(120 5% 7%);     /* Mineral Shadow */
+  --color-stone-800: hsl(120 5% 12%);    /* Dark Slate */
+  --color-stone-400: hsl(120 2% 45%);    /* Mineral Gray */
+  --color-stone-100: hsl(60 15% 94%);    /* Bone/Limestone */
+  --color-stone-50: hsl(60 15% 98%);
 
-  --color-moss-500: hsl(139 15% 42%);  /* Muted Green #5c7c66 */
-  --color-moss-400: hsl(139 15% 50%);
+  --color-moss-600: hsl(145 25% 30%);    /* Forest Green */
+  --color-moss-500: hsl(145 20% 42%);    /* Muted Moss */
+  --color-moss-400: hsl(145 20% 55%);    /* Light Moss */
+  --color-mineral-copper: hsl(25 30% 45%); /* Oxidized Copper */
+  --color-mineral-slate: hsl(210 15% 40%); /* Slate Blue Mineral */
 
   --font-sans: "IBM Plex Sans", sans-serif;
   --font-display: "Inter Tight", sans-serif;
