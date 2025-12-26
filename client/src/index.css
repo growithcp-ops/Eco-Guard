@@ -2,26 +2,26 @@
 @import "tw-animate-css";
 
 @theme inline {
-  --color-stone-950: hsl(140 12% 5%);     /* Deep Earth */
-  --color-stone-900: hsl(140 12% 8%);     /* Forest Shadow */
-  --color-stone-800: hsl(140 10% 12%);    /* Deep Moss Rock */
-  --color-stone-400: hsl(140 5% 45%);     /* Wet Stone Gray */
-  --color-stone-100: hsl(80 20% 94%);     /* Soft Leaf White */
-  --color-stone-50: hsl(80 20% 98%);
+  --color-stone-950: hsl(0 0% 100%);     /* White */
+  --color-stone-900: hsl(0 0% 98%);      /* Near White */
+  --color-stone-800: hsl(0 0% 95%);      /* Light Gray */
+  --color-stone-400: hsl(0 0% 40%);      /* Medium Gray */
+  --color-stone-100: hsl(0 0% 10%);      /* Near Black */
+  --color-stone-50: hsl(0 0% 5%);        /* Black */
 
-  --color-moss-600: hsl(142 45% 25%);     /* Deep Forest */
-  --color-moss-500: hsl(142 40% 35%);     /* Vibrant Moss */
-  --color-moss-400: hsl(142 35% 50%);     /* Leaf Green */
-  --color-accent-lime: hsl(85 65% 55%);   /* Fresh Sprout */
-  --color-mineral-clay: hsl(35 25% 45%);  /* Wet Clay */
+  --color-moss-600: hsl(142 70% 30%);    /* Primary Green */
+  --color-moss-500: hsl(142 76% 36%);    /* CTA Green */
+  --color-moss-400: hsl(142 70% 45%);    /* Secondary Green */
+  --color-accent-lime: hsl(142 76% 36%);
+  --color-mineral-clay: hsl(142 76% 36%);
 
-  --font-sans: "IBM Plex Sans", sans-serif;
-  --font-display: "Inter Tight", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Inter", sans-serif;
 }
 
 body {
-  @apply bg-stone-950 text-stone-100;
-  background-image: radial-gradient(circle at 50% -20%, hsl(142 40% 15%), transparent 70%);
+  @apply bg-white text-black font-sans;
+  background-image: none;
 }
 
 
