@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import abstractLandscape from "@assets/generated_images/abstract_stone_and_moss_landscape.png";
 
 export function Hero() {
   return (
@@ -29,14 +30,45 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="space-y-4"
+          className="space-y-4 relative z-10"
         >
-          <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-stone-400 block text-center md:text-left">Insight</span>
-          <h1 className="text-5xl md:text-7xl lg:text-[84px] font-display font-bold leading-[1.05] tracking-tight text-center md:text-left text-stone-900">
-            Earth Remembers<br />
-            What We Abandon.
+          <div className="flex items-center gap-4 mb-8">
+             <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-moss-500 bg-moss-500/10 px-3 py-1 rounded-full border border-moss-500/20">Report 2025</span>
+             <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-stone-400">Insight</span>
+          </div>
+          <h1 className="text-6xl md:text-8xl lg:text-[130px] font-display font-black leading-[0.85] tracking-tighter text-center md:text-left text-stone-900">
+            Earth<br />
+            <span className="text-stroke hover:text-stone-900 transition-all duration-700 cursor-default relative group">
+              Remembers
+              <span className="absolute -bottom-2 left-0 w-0 h-1 bg-moss-500 group-hover:w-full transition-all duration-700"></span>
+            </span><br />
+            What We<br />
+            Abandon.
           </h1>
         </motion.div>
+
+        {/* Abstract 3D Asset Decoration */}
+        <motion.div 
+          animate={{ y: [0, -20, 0], rotate: [0, 5, 0] }}
+          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute right-[5%] top-[20%] w-64 h-64 hidden lg:block opacity-80"
+        >
+           <img src={abstractLandscape} alt="Abstract Stone" className="w-full h-full object-contain filter drop-shadow-2xl" />
+        </motion.div>
+
+        {/* Marquee effect */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden whitespace-nowrap py-10 border-t border-stone-200">
+          <div className="flex animate-scroll-text">
+            {[1, 2, 3, 4].map((n) => (
+              <div key={n} className="flex items-center gap-20 px-10">
+                <span className="text-4xl font-display font-black text-stone-200 uppercase">Sustainable Extraction</span>
+                <span className="w-3 h-3 bg-moss-500 rounded-full"></span>
+                <span className="text-4xl font-display font-black text-stone-200 uppercase">Mineral Recovery</span>
+                <span className="w-3 h-3 bg-moss-500 rounded-full"></span>
+              </div>
+            ))}
+          </div>
+        </div>
 
         <motion.div 
           initial={{ opacity: 0 }}

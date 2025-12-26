@@ -2,42 +2,45 @@
 @import "tw-animate-css";
 
 @theme inline {
-  --color-stone-950: hsl(120 5% 4%);     /* Deep Mineral Black */
-  --color-stone-900: hsl(120 5% 7%);     /* Mineral Shadow */
-  --color-stone-800: hsl(120 5% 12%);    /* Dark Slate */
-  --color-stone-400: hsl(120 2% 45%);    /* Mineral Gray */
-  --color-stone-100: hsl(60 15% 94%);    /* Bone/Limestone */
+  --color-stone-950: hsl(120 5% 4%);
+  --color-stone-900: hsl(120 5% 7%);
+  --color-stone-800: hsl(120 5% 12%);
+  --color-stone-400: hsl(120 2% 45%);
+  --color-stone-100: hsl(60 15% 94%);
   --color-stone-50: hsl(60 15% 98%);
 
-  --color-moss-600: hsl(145 25% 30%);    /* Forest Green */
-  --color-moss-500: hsl(145 20% 42%);    /* Muted Moss */
-  --color-moss-400: hsl(145 20% 55%);    /* Light Moss */
-  --color-mineral-copper: hsl(25 30% 45%); /* Oxidized Copper */
-  --color-mineral-slate: hsl(210 15% 40%); /* Slate Blue Mineral */
+  --color-moss-600: hsl(145 25% 30%);
+  --color-moss-500: hsl(145 20% 42%);
+  --color-moss-400: hsl(145 20% 55%);
+  --color-mineral-copper: hsl(25 30% 45%);
+  --color-mineral-slate: hsl(210 15% 40%);
 
   --font-sans: "IBM Plex Sans", sans-serif;
   --font-display: "Inter Tight", sans-serif;
 
-  --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
-  --animate-fade-in: fade-in 1s ease-out forwards;
-  --animate-slow-pan: slow-pan 20s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-scroll-text: scroll-text 30s linear infinite;
 
-  @keyframes fade-in-up {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
   }
 
-  @keyframes fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-
-  @keyframes slow-pan {
-    0% { transform: scale(1.1) translate(0%, 0%); }
-    50% { transform: scale(1.1) translate(-2%, -2%); }
-    100% { transform: scale(1.1) translate(0%, 0%); }
+  @keyframes scroll-text {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
   }
 }
+
+.text-stroke {
+  -webkit-text-stroke: 1px currentColor;
+  color: transparent;
+}
+
+.bg-grain {
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
+
 
 @layer base {
   html {
