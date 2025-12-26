@@ -2,35 +2,28 @@
 @import "tw-animate-css";
 
 @theme inline {
-  --color-stone-950: hsl(120 5% 4%);
-  --color-stone-900: hsl(120 5% 7%);
-  --color-stone-800: hsl(120 5% 12%);
-  --color-stone-400: hsl(120 2% 45%);
-  --color-stone-100: hsl(60 15% 94%);
-  --color-stone-50: hsl(60 15% 98%);
+  --color-stone-950: hsl(140 12% 5%);     /* Deep Earth */
+  --color-stone-900: hsl(140 12% 8%);     /* Forest Shadow */
+  --color-stone-800: hsl(140 10% 12%);    /* Deep Moss Rock */
+  --color-stone-400: hsl(140 5% 45%);     /* Wet Stone Gray */
+  --color-stone-100: hsl(80 20% 94%);     /* Soft Leaf White */
+  --color-stone-50: hsl(80 20% 98%);
 
-  --color-moss-600: hsl(145 25% 30%);
-  --color-moss-500: hsl(145 20% 42%);
-  --color-moss-400: hsl(145 20% 55%);
-  --color-mineral-copper: hsl(25 30% 45%);
-  --color-mineral-slate: hsl(210 15% 40%);
+  --color-moss-600: hsl(142 45% 25%);     /* Deep Forest */
+  --color-moss-500: hsl(142 40% 35%);     /* Vibrant Moss */
+  --color-moss-400: hsl(142 35% 50%);     /* Leaf Green */
+  --color-accent-lime: hsl(85 65% 55%);   /* Fresh Sprout */
+  --color-mineral-clay: hsl(35 25% 45%);  /* Wet Clay */
 
   --font-sans: "IBM Plex Sans", sans-serif;
   --font-display: "Inter Tight", sans-serif;
-
-  --animate-float: float 6s ease-in-out infinite;
-  --animate-scroll-text: scroll-text 30s linear infinite;
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-  }
-
-  @keyframes scroll-text {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
 }
+
+body {
+  @apply bg-stone-950 text-stone-100;
+  background-image: radial-gradient(circle at 50% -20%, hsl(142 40% 15%), transparent 70%);
+}
+
 
 .text-stroke-white {
   -webkit-text-stroke: 1px rgba(255,255,255,0.2);
