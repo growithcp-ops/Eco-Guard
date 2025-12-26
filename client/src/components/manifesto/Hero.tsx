@@ -20,17 +20,17 @@ export function Hero() {
 
       <div className="flex-1 flex flex-col lg:flex-row items-center px-6 md:px-12 py-12 max-w-7xl mx-auto w-full gap-12">
         <div className="flex-1 text-left space-y-6">
-          <h1 className="text-5xl md:text-7xl font-extrabold text-stone-900 leading-tight">
-            Protecting Our <span className="text-moss-500">Environment</span> for the Future.
+          <h1 className="text-6xl md:text-8xl font-black text-[#000000] leading-[1.1] tracking-tight">
+            Protecting Our <span className="text-moss-600 underline decoration-moss-600/20 underline-offset-8">Environment</span> for the Future.
           </h1>
-          <p className="text-lg text-stone-600 max-w-xl leading-relaxed">
+          <p className="text-xl text-[#333333] max-w-xl leading-relaxed font-medium">
             We are dedicated to restoring natural landscapes affected by illegal mining. Join our mission to preserve the earth's biodiversity and reclaim our natural heritage.
           </p>
-          <div className="flex flex-wrap gap-4">
-            <button className="px-8 py-4 bg-moss-500 text-white font-bold rounded-md hover:bg-moss-600 transition-all shadow-lg shadow-moss-500/20">
+          <div className="flex flex-wrap gap-4 pt-4">
+            <button className="px-10 py-5 bg-[#1a5f2e] text-white font-black rounded-lg hover:bg-[#144d25] transition-all shadow-xl shadow-green-900/20 text-lg">
               Get Involved
             </button>
-            <button className="px-8 py-4 border-2 border-stone-200 text-stone-900 font-bold rounded-md hover:border-moss-500 hover:text-moss-500 transition-all">
+            <button className="px-10 py-5 border-3 border-[#000000] text-[#000000] font-black rounded-lg hover:bg-[#000000] hover:text-white transition-all text-lg">
               Learn More
             </button>
           </div>
