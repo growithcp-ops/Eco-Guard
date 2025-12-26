@@ -1,0 +1,185 @@
+ROLE
+
+Act as an award-winning experimental web designer whose work appears on Awwwards and CSS Design Awards.
+
+This is not a corporate website.
+This is a statement-driven CleanTech manifesto.
+
+CORE IDEA
+
+Illegal granite mining leaves behind abandoned, non-aesthetic stone waste that permanently scars the Earth.
+We reclaim this waste and transform it into sustainable building materials using international-standard operations.
+
+The website must:
+
+Create awareness before promotion
+
+Feel serious, calm, and impactful
+
+Communicate responsibility over profit
+
+Avoid all startup clichés
+
+TYPOGRAPHY (STRICT)
+
+Headings: Use a bold grotesk font similar to Neue Montreal / Inter Tight
+
+Body text: IBM Plex Sans
+
+No playful, rounded, or SaaS-style fonts
+
+Large, editorial typography
+
+Tight line height for headings, relaxed for body
+
+Hero text must visually dominate the screen
+
+Avoid fonts like Poppins, Montserrat, Lato, Nunito, Roboto.
+
+VISUAL STYLE
+
+Brutalist + editorial + clean-tech
+
+Black, stone gray, off-white palette
+
+Muted green only as an accent
+
+Heavy use of negative space
+
+Minimal UI, maximum meaning
+
+Subtle scroll-based animations only when they add impact
+
+No stock photos, no decorative graphics
+
+PAGE STRUCTURE (MANDATORY)
+1. HERO
+
+Full-screen, no navbar initially.
+
+Large headline:
+“Earth Remembers What We Abandon.”
+
+Small subtext:
+Illegal mining doesn’t end when machines leave.
+
+Slow fade-in animation.
+
+2. CRITICAL DANGER
+
+Dark background.
+
+Short, sharp lines appearing on scroll:
+
+Granite was extracted.
+
+Profit was taken.
+
+Waste was left.
+
+Damage stayed.
+
+No images. Text-first impact.
+
+3. HALL OF ZERO LIMIT
+
+Minimal, near-empty section.
+
+Very slow scroll.
+Abstract stone or grain textures.
+
+Single line:
+“Zero responsibility creates infinite damage.”
+
+4. TRANSFORMATION
+
+Background turns light.
+
+Introduce the company without marketing language.
+
+Statements like:
+
+We don’t mine. We recover.
+
+Waste becomes material again.
+
+Abstract transition visuals only.
+
+5. PROCESS
+
+Clean grid layout.
+
+Steps:
+
+Recover abandoned granite
+
+Process with international standards
+
+Deliver sustainable building materials
+
+No technical details. No buzzwords.
+
+6. GRAB & GO
+
+Strong action section.
+
+Headline:
+“If you build, you choose.”
+
+CTAs:
+
+Partner with us
+
+Build responsibly
+
+This must feel like a moral decision, not a sale.
+
+7. VALUES
+
+Calm, minimal section.
+
+Statements:
+
+Environment-first operations
+
+Long-term responsibility
+
+Global standards
+
+8. FOOTER
+
+Quiet ending.
+
+Text only:
+“Saving Earth doesn’t start with technology. It starts with responsibility.”
+
+TECH RULES
+
+Responsive, mobile-first
+
+Modern HTML, CSS, JS
+
+Smooth scrolling
+
+Lightweight animations
+
+High performance
+
+Clean semantic structure
+
+ABSOLUTE NOs
+
+No corporate layouts
+
+No startup marketing tone
+
+No feature lists
+
+No smiling people photos
+
+No greenwashing language
+
+FINAL INSTRUCTION
+
+Build this website as a digital environmental manifesto.
+If it looks like a normal startup site, redesign it.
