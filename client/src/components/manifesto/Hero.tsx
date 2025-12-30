@@ -1,9 +1,19 @@
 import { motion } from "framer-motion";
+import darkGranite from "@assets/generated_images/dark_raw_granite_texture_closeup.png";
 import abstractLandscape from "@assets/generated_images/abstract_stone_and_moss_landscape.png";
 
 export function Hero() {
   return (
     <section className="relative min-h-screen w-full flex flex-col bg-[#0a0a0a] text-white overflow-hidden pt-32 md:pt-40">
+      {/* Background Rock Texture Overlay */}
+      <div className="absolute inset-0 z-0 opacity-40 mix-blend-overlay pointer-events-none">
+        <img 
+          src={darkGranite} 
+          alt="Dark Granite Background" 
+          className="w-full h-full object-cover grayscale contrast-125" 
+        />
+      </div>
+
       {/* Top Bar / Navigation Mockup */}
       <nav className="w-full flex justify-between items-center px-6 md:px-12 py-8 border-b border-white/5 bg-black/40 backdrop-blur-xl fixed top-0 z-50">
         <div className="flex items-center gap-12">
