@@ -29,7 +29,9 @@ export function CriticalDanger() {
         <img 
           src={darkGranite} 
           alt="Dark Granite Texture" 
-          className="w-full h-full object-cover grayscale contrast-125 scale-110" 
+          className="w-full h-full object-cover grayscale contrast-125 scale-110"
+          loading="lazy"
+          decoding="async"
         />
       </motion.div>
       

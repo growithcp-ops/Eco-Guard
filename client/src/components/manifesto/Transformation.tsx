@@ -7,7 +7,7 @@ export function Transformation() {
     <section className="relative min-h-screen bg-stone-100 text-stone-900 flex flex-col items-center justify-center py-24 px-6 overflow-hidden">
       {/* Background Texture */}
       <div className="absolute inset-0 z-0 opacity-40 mix-blend-multiply">
-        <img src={lightTexture} alt="Light Stone Texture" className="w-full h-full object-cover" />
+        <img src={lightTexture} alt="Light Stone Texture" className="w-full h-full object-cover" loading="lazy" decoding="async" />
       </div>
 
       <div className="z-10 w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -35,7 +35,7 @@ export function Transformation() {
           viewport={{ once: true }}
           className="order-1 lg:order-2 relative aspect-[4/3] w-full overflow-hidden rounded-sm shadow-xl"
         >
-          <img src={sculpture} alt="Abstract Stone Sculpture" className="w-full h-full object-cover hover:scale-105 transition-transform duration-[2s] ease-out" />
+          <img src={sculpture} alt="Abstract Stone Sculpture" className="w-full h-full object-cover hover:scale-105 transition-transform duration-[2s] ease-out" loading="lazy" decoding="async" />
           <div className="absolute inset-0 ring-1 ring-inset ring-black/10 pointer-events-none"></div>
         </motion.div>
       </div>

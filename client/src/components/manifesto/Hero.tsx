@@ -10,7 +10,9 @@ export function Hero() {
         <img 
           src={darkGranite} 
           alt="Dark Granite Background" 
-          className="w-full h-full object-cover grayscale contrast-125" 
+          className="w-full h-full object-cover grayscale contrast-125"
+          loading="lazy"
+          decoding="async"
         />
       </div>
 
@@ -84,7 +86,9 @@ export function Hero() {
           <img 
             src={abstractLandscape} 
             alt="Recovery Monolith" 
-            className="w-full h-full object-contain opacity-40 grayscale contrast-150 scale-125" 
+            className="w-full h-full object-contain opacity-40 grayscale contrast-150 scale-125"
+            loading="lazy"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#0a0a0a]/50 to-[#0a0a0a]"></div>
         </motion.div>
