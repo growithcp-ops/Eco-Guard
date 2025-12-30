@@ -1,81 +1,94 @@
 import { motion } from "framer-motion";
+import abstractLandscape from "@assets/generated_images/abstract_stone_and_moss_landscape.png";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen w-full flex flex-col bg-white text-black overflow-hidden font-sans">
-      {/* Simple Clean Navigation */}
-      <nav className="w-full flex justify-between items-center px-6 md:px-12 py-6 border-b border-stone-100">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-moss-500 rounded-sm"></div>
-          <span className="text-xl font-bold tracking-tight">EcoRestore</span>
+    <section className="relative min-h-screen w-full flex flex-col bg-[#0a0a0a] text-white overflow-hidden">
+      {/* Top Bar / Navigation Mockup */}
+      <nav className="w-full flex justify-between items-center px-6 md:px-12 py-8 border-b border-white/5 bg-black/40 backdrop-blur-xl fixed top-0 z-50">
+        <div className="flex items-center gap-12">
+          <span className="text-3xl font-display font-black tracking-tighter uppercase text-white">RECLAIM</span>
+          <div className="hidden lg:flex items-center gap-6 text-[10px] font-mono text-stone-500 uppercase tracking-widest">
+            <span className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-moss-500 rounded-full animate-pulse"></span> Network Active</span>
+            <span>2025 // PROTOCOL</span>
+          </div>
         </div>
-        <div className="flex items-center gap-6 text-sm font-medium">
-          <a href="#" className="text-stone-600 hover:text-moss-500">About</a>
-          <a href="#" className="text-stone-600 hover:text-moss-500">Mission</a>
-          <button className="px-5 py-2 bg-moss-500 text-white rounded-md text-sm font-semibold hover:bg-moss-600 transition-colors">
-            Contact Us
-          </button>
+        <div className="flex items-center gap-10 text-[11px] font-display font-bold uppercase tracking-[0.2em] text-stone-400">
+          <a href="#" className="hover:text-white transition-all duration-300 hover:tracking-[0.3em]">Manifesto</a>
+          <a href="#" className="hover:text-white transition-all duration-300 hover:tracking-[0.3em]">Recovery</a>
+          <a href="#" className="hover:text-white transition-all duration-300 hover:tracking-[0.3em]">Connect</a>
         </div>
       </nav>
 
-      <div className="flex-1 flex flex-col lg:flex-row items-center px-6 md:px-12 py-12 max-w-7xl mx-auto w-full gap-12">
-        <div className="flex-1 text-left space-y-6">
-          <h1 className="text-6xl md:text-8xl font-black text-[#000000] leading-[1.1] tracking-tight">
-            Protecting Our <span className="text-moss-600 underline decoration-moss-600/20 underline-offset-8">Environment</span> for the Future.
+      <div className="flex-1 flex flex-col justify-end pb-32 px-6 md:px-12 max-w-screen-2xl mx-auto w-full relative z-10">
+        <motion.div 
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          className="max-w-5xl"
+        >
+          <div className="flex items-center gap-4 mb-8">
+             <div className="h-px w-12 bg-moss-500"></div>
+             <span className="text-[10px] font-mono uppercase tracking-[0.4em] text-moss-500">System Initialization</span>
+          </div>
+          
+          <h1 className="text-7xl md:text-[140px] lg:text-[180px] font-display font-black leading-[0.8] tracking-tighter text-white uppercase italic">
+            Earth<br />
+            <span className="text-stroke-white opacity-20 hover:opacity-100 transition-opacity duration-700 relative group">
+              Remembers
+              <span className="absolute -bottom-2 left-0 w-0 h-1 bg-moss-500 group-hover:w-full transition-all duration-700"></span>
+            </span><br />
+            The Scars.
           </h1>
-          <p className="text-xl text-[#333333] max-w-xl leading-relaxed font-medium">
-            We are dedicated to restoring natural landscapes affected by illegal mining. Join our mission to preserve the earth's biodiversity and reclaim our natural heritage.
-          </p>
-          <div className="flex flex-wrap gap-4 pt-4">
-            <button className="px-10 py-5 bg-[#1a5f2e] text-white font-black rounded-lg hover:bg-[#144d25] transition-all shadow-xl shadow-green-900/20 text-lg">
-              Get Involved
-            </button>
-            <button className="px-10 py-5 border-3 border-[#000000] text-[#000000] font-black rounded-lg hover:bg-[#000000] hover:text-white transition-all text-lg">
-              Learn More
-            </button>
+
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-end">
+            <p className="text-xl md:text-2xl font-sans font-light text-stone-400 leading-tight max-w-md">
+              Illegal mining leaves behind a ghost landscape. We are the protocol for restoration.
+            </p>
+            <div className="flex flex-col gap-4">
+              <span className="text-[10px] font-mono uppercase tracking-widest text-stone-600">Current Objective:</span>
+              <div className="flex items-center gap-4">
+                <button className="px-8 py-4 bg-white text-black font-display font-bold uppercase text-xs tracking-widest hover:bg-moss-500 hover:text-white transition-all duration-300">
+                  Begin Recovery
+                </button>
+                <div className="flex -space-x-2">
+                  {[1,2,3].map(i => (
+                    <div key={i} className="w-8 h-8 rounded-full border-2 border-black bg-stone-800 flex items-center justify-center text-[8px] font-bold">0{i}</div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        
-        <div className="flex-1 w-full relative">
-          <div className="aspect-square bg-stone-100 rounded-2xl overflow-hidden relative">
-             <div className="absolute inset-0 bg-gradient-to-tr from-moss-500/20 to-transparent"></div>
-             {/* Simple Placeholder Visual */}
-             <div className="absolute inset-12 border-4 border-white/40 rounded-xl flex items-center justify-center">
-                <div className="text-moss-500 text-6xl font-black opacity-20 italic">EARTH</div>
-             </div>
-          </div>
-          {/* Feature highlights */}
-          <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-stone-100 max-w-[200px]">
-            <p className="text-xs font-bold text-moss-500 uppercase tracking-wider mb-1">Impact</p>
-            <p className="text-sm font-medium text-stone-900">Over 500+ acres of land restored in 2024.</p>
-          </div>
-        </div>
+        </motion.div>
       </div>
 
-      <div className="w-full bg-stone-50 py-12 px-6 border-t border-stone-100">
-        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          <div>
-            <p className="text-3xl font-black text-stone-900">50+</p>
-            <p className="text-sm text-stone-500 font-medium">Projects Done</p>
-          </div>
-          <div>
-            <p className="text-3xl font-black text-stone-900">12k</p>
-            <p className="text-sm text-stone-500 font-medium">Trees Planted</p>
-          </div>
-          <div>
-            <p className="text-3xl font-black text-stone-900">200+</p>
-            <p className="text-sm text-stone-500 font-medium">Volunteers</p>
-          </div>
-          <div>
-            <p className="text-3xl font-black text-stone-900">100%</p>
-            <p className="text-sm text-stone-500 font-medium">Committed</p>
-          </div>
-        </div>
+      {/* Hero Asset - Large & Atmospheric */}
+      <div className="absolute top-0 right-0 w-1/2 h-full hidden lg:block select-none pointer-events-none overflow-hidden">
+        <motion.div 
+          animate={{ 
+            y: [0, -30, 0],
+            rotate: [0, 2, 0]
+          }}
+          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+          className="w-full h-full relative"
+        >
+          <img 
+            src={abstractLandscape} 
+            alt="Recovery Monolith" 
+            className="w-full h-full object-contain opacity-40 grayscale contrast-150 scale-125" 
+          />
+          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#0a0a0a]/50 to-[#0a0a0a]"></div>
+        </motion.div>
       </div>
+
+      {/* Data HUD element */}
+      <div className="absolute bottom-12 right-12 hidden xl:flex flex-col items-end gap-2 text-[10px] font-mono text-stone-700 uppercase tracking-widest">
+        <span>LAT: -23.5505 | LONG: -46.6333</span>
+        <span>RECLAMATION STATUS: 42% COMPLETE</span>
+      </div>
+
+      {/* Texture Overlay */}
+      <div className="absolute inset-0 opacity-[0.05] pointer-events-none bg-grain mix-blend-overlay"></div>
     </section>
   );
 }
-
-
-
-

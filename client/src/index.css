@@ -2,26 +2,55 @@
 @import "tw-animate-css";
 
 @theme inline {
-  --color-stone-950: hsl(0 0% 0%);       /* True Black */
-  --color-stone-900: hsl(0 0% 10%);      /* Deep Gray */
-  --color-stone-800: hsl(0 0% 20%);      /* Slate */
-  --color-stone-400: hsl(0 0% 30%);      /* Text Gray */
-  --color-stone-100: hsl(0 0% 95%);      /* Near White */
-  --color-stone-50: hsl(0 0% 98%);       /* Background */
+  --color-stone-950: hsl(120 5% 4%);     /* Deep Mineral Black */
+  --color-stone-900: hsl(120 5% 7%);     /* Mineral Shadow */
+  --color-stone-800: hsl(120 5% 12%);    /* Dark Slate */
+  --color-stone-400: hsl(120 2% 45%);    /* Mineral Gray */
+  --color-stone-100: hsl(60 15% 94%);    /* Bone/Limestone */
+  --color-stone-50: hsl(60 15% 98%);
 
-  --color-moss-600: hsl(142 80% 25%);    /* Strong Primary Green */
-  --color-moss-500: hsl(142 85% 30%);    /* Strong CTA Green */
-  --color-moss-400: hsl(142 70% 40%);    /* Vibrant Green */
-  --color-accent-lime: hsl(142 85% 30%);
-  --color-mineral-clay: hsl(142 85% 30%);
+  --color-moss-600: hsl(145 25% 30%);    /* Forest Green */
+  --color-moss-500: hsl(145 20% 42%);    /* Muted Moss */
+  --color-moss-400: hsl(145 20% 55%);    /* Light Moss */
+  --color-mineral-copper: hsl(25 30% 45%); /* Oxidized Copper */
+  --color-mineral-slate: hsl(210 15% 40%); /* Slate Blue Mineral */
 
-  --font-sans: "Inter", sans-serif;
-  --font-display: "Inter", sans-serif;
+  --font-sans: "IBM Plex Sans", sans-serif;
+  --font-display: "Inter Tight", sans-serif;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-scroll-text: scroll-text 30s linear infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes scroll-text {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
 }
 
-body {
-  @apply bg-white text-[#111111] font-sans;
-  background-image: none;
+.text-stroke-white {
+  -webkit-text-stroke: 1px rgba(255,255,255,0.2);
+  color: transparent;
+}
+
+.bg-grain {
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-stone-900 text-stone-100 font-sans antialiased overflow-x-hidden selection:bg-moss-500 selection:text-stone-900;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight font-bold;
+  }
 }
 
 
