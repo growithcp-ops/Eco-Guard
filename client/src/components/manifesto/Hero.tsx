@@ -17,7 +17,7 @@ export function Hero() {
       {/* Top Bar / Navigation Mockup */}
       <nav className="w-full flex justify-between items-center px-6 md:px-12 py-8 border-b border-white/5 bg-black/40 backdrop-blur-xl fixed top-0 z-50">
         <div className="flex items-center gap-12">
-          <span className="text-3xl font-display font-black tracking-tighter uppercase text-white">RECLAIM</span>
+          <span className="text-3xl font-display font-black tracking-tighter uppercase text-white">Green Rock</span>
           <div className="hidden lg:flex items-center gap-6 text-[10px] font-mono text-stone-500 uppercase tracking-widest">
             <span className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-moss-500 rounded-full animate-pulse"></span> Network Active</span>
             <span>2025 // PROTOCOL</span>

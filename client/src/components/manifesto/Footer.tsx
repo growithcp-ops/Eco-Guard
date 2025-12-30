@@ -5,7 +5,7 @@ export function Footer() {
         “Saving Earth doesn’t start with technology. It starts with responsibility.”
       </p>
       <div className="mt-8 text-xs font-mono opacity-50">
-        &copy; {new Date().getFullYear()} EARTH REMEMBERS. ALL RIGHTS RESERVED.
+        &copy; {new Date().getFullYear()} Green Rock innovations. ALL RIGHTS RESERVED.
       </div>
     </footer>
   );
