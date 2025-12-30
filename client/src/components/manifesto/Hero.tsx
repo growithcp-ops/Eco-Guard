@@ -3,7 +3,7 @@ import abstractLandscape from "@assets/generated_images/abstract_stone_and_moss_
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen w-full flex flex-col bg-[#0a0a0a] text-white overflow-hidden">
+    <section className="relative min-h-screen w-full flex flex-col bg-[#0a0a0a] text-white overflow-hidden pt-32 md:pt-40">
       {/* Top Bar / Navigation Mockup */}
       <nav className="w-full flex justify-between items-center px-6 md:px-12 py-8 border-b border-white/5 bg-black/40 backdrop-blur-xl fixed top-0 z-50">
         <div className="flex items-center gap-12">
@@ -36,7 +36,6 @@ export function Hero() {
             Earth<br />
             <span className="text-stroke-white opacity-20 hover:opacity-100 transition-opacity duration-700 relative group">
               Remembers
-              <span className="absolute -bottom-2 left-0 w-0 h-1 bg-moss-500 group-hover:w-full transition-all duration-700"></span>
             </span><br />
             The Scars.
           </h1>
